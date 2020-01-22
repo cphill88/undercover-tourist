@@ -1,1 +1,1 @@
-web: npx -p node@10 foundation watch
+web: npx -p node@10 foundation watch $PORT
