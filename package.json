@@ -7,7 +7,7 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp sass",
-    "deploy": "npx -p node@10 foundation watch"
+    "heroku-postbuild": "npx -p node@10 foundation watch"
   },
   "engines": {
     "node": "12.14.1",
