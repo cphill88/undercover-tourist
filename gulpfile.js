@@ -26,7 +26,7 @@ function sass() {
 function serve() {
   browserSync.init({
     server: "./",
-    firefox: '-browser "firefox.exe"'
+    open: false
   });
 
   gulp.watch("scss/*.scss", sass);
