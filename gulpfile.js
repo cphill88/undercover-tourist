@@ -2,7 +2,6 @@ var gulp          = require('gulp');
 var browserSync   = require('browser-sync').create();
 var $             = require('gulp-load-plugins')();
 var autoprefixer  = require('autoprefixer');
-const PORT = process.env.PORT || 3000;
 
 var sassPaths = [
   'node_modules/foundation-sites/scss',
@@ -26,7 +25,8 @@ function sass() {
 function serve() {
   browserSync.init({
     server: "./",
-    open: false
+    open: false,
+    port: $PORT
   });
 
   gulp.watch("scss/*.scss", sass);
