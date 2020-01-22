@@ -1,11 +1,13 @@
 {
+  "homepage":"homepage": "http://cphill88.github.io/undercover-tourist",
   "name": "foundation-sites-template",
   "version": "1.0.0",
   "description": "Basic template for a new Foundation for Sites project.",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
-    "build": "gulp sass"
+    "build": "gulp sass",
+    "deploy": "npx -p node@10 foundation watch"
   },
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
@@ -23,6 +25,7 @@
   "devDependencies": {
     "autoprefixer": "^9.1.5",
     "browser-sync": "^2.18.13",
+    "gh-pages": "^2.2.0",
     "gulp": "^4.0.0",
     "gulp-load-plugins": "^1.1.0",
     "gulp-postcss": "^8.0.0",
