@@ -7,7 +7,7 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp sass",
-    "heroku-postbuild": "npx -p node@10 foundation watch"
+    "heroku-postbuild": "npm install --global foundation-cli npx -p node@10 foundation watch"
   },
   "engines": {
     "node": "10"
