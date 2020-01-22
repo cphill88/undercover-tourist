@@ -10,6 +10,10 @@
     "predeploy": "npx -p node@10 npm install",
     "deploy": "npx -p node@10 foundation watch"
   },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
   "bugs": {
