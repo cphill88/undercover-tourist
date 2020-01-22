@@ -24,3 +24,7 @@ function sass() {
 function serve() {
   gulp.watch("scss/*.scss", sass);
 }
+
+gulp.task('sass', sass);
+gulp.task('serve', gulp.series('sass', serve));
+gulp.task('default', gulp.series('sass', serve));
