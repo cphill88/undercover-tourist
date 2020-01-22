@@ -19,14 +19,8 @@ function sass() {
       autoprefixer({ browsers: ['last 2 versions', 'ie >= 9'] })
     ]))
     .pipe(gulp.dest('css'))
-    .pipe(browserSync.stream());
 };
 
 function serve() {
   gulp.watch("scss/*.scss", sass);
-  gulp.watch("*.html").on('change', browserSync.reload);
 }
-
-gulp.task('sass', sass);
-gulp.task('serve', gulp.series('sass', serve));
-gulp.task('default', gulp.series('sass', serve));
