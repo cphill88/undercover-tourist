@@ -10,8 +10,7 @@
     "heroku-postbuild": "npx -p node@10 foundation watch"
   },
   "engines": {
-    "node": "12.14.1",
-    "npm": "6.13.4"
+    "node": "10",
   },
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
