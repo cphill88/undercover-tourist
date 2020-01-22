@@ -1,0 +1,203 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="scss/custom.scss">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+  </head>
+  <body>
+
+    <div class="title-bar" data-responsive-toggle="animated-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+      <div class="title-bar-title">Menu</div>
+    </div>
+
+    <div class="top-bar top-bar-sticky" id="animated-menu" data-animate="hinge-in-from-top spin-out">
+      <div class="top-bar-left nav-bar grid-x grid-margin-x">
+        <ul class="menu large-offset-1">
+          <li class="menu-list-item"><a href="#">TICKETS</a></li>
+          <li class="menu-list-item"><a href="#">HOTELS</a></li class="menu-list-item">
+          <li class="menu-list-item"><a href="#">CAR RENTALS</a></li class="menu-list-item">
+          <li><button class="button top-bar-left" type="button" data-toggle="dropdown-1">PLANNING</button>
+          <div class="dropdown-pane" id="dropdown-1" data-dropdown data-hover="true" data-hover-pane="true">
+            <a href="#">Blog</a>
+            <a href="#">Crowd Calendar</a>
+            <a href="#">City Guides</a>
+            <a href="#">Apps</a>
+            <a href="#">Park Plans</a>
+          </div></li>
+        </ul>
+      </div>
+      <div class="right-arrow"></div>
+      <div class="top-bar-right nav-bar">
+        <ul class="menu">
+          <li><a href="#" class="sign-up" data-open="modal">SIGN UP FOR EMAIL UPDATES</a></li>
+          <div class="reveal" id="modal" data-reveal>
+            <div class="modal-header text-center">SIGN UP FOR EMAIL UPDATES</div>
+            <form data-abide>
+              <div data-abide-error class="alert callout" style="display: none;">
+                <p><i class="fi-alert"></i> There are some errors in your form.</p>
+              </div>
+              <div class="grid-container modal-form">
+                <div class="grid-x grid-padding-x">
+                  <div class="medium-6 cell">
+                    <label>First Name
+                      <input type="text" placeholder="" required pattern="alpha">
+                      <span class="form-error">
+                        First name required.
+                      </span>
+                    </label>
+                  </div>
+                  <div class="medium-6 cell">
+                    <label>Last Name
+                      <input type="text" placeholder="" required pattern="alpha">
+                      <span class="form-error">
+                        Last name required.
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="grid-x grid-padding-x">
+                  <div class="medium-12 cell">
+                    <label>Email Address
+                      <input type="text" placeholder="" required pattern="email">
+                      <span class="form-error">
+                        Email address required.
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-button"><button type="submit" class="button large">Sign Me Up</button></div>
+            </form>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+      <div class="content-container">
+        <div class="grid-x grid-padding-x align-self-middle">
+          <div class="large-8 medium-8 small-8 cell large-offset-2 medium-offset-2 small-offset-2">
+            <div class="callout large text-center grey-background">
+              <h6 class="primary card-header">THE LEADING NAME IN </h6>
+              <h4 class="primary card-subheader">Discount Attraction Tickets</h4>
+              <p>We frogs aren’t just known for our toadally awesome savings — 
+                we’ve mastered the art of the family vacation! We can help you save up to four hours 
+                a day using our exclusive park plans, interactive apps and predictive crowd calendar. 
+                Hop along with us and you’ll be leaping past the lines in no time!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-button"><a href="#" class="button large">View All Tickets</a></div>
+
+      <div class="grid-container">
+        <div class="grid-x grid-padding-x">
+          <div class="large-12 cell text-center">
+              <h4 class="primary card-subheader">Featured Theme Parks</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="bxslider">
+        <div>
+          <img class="carousel-image" src="/assets/discovery-cove-day-resort-with-dolphin-swim-package-12_sm.png" title="Discovery Cove Tickets">
+          <div class="offer">
+            SAVE UP TO $140
+          </div>
+        </div>
+        <div>
+          <img class="carousel-image" src="/assets/seaworld-orlando-weekday-only_3_sm.png" title="SeaWorld Orlando Tickets">
+          <div class="offer">SAVE UP TO $140</div>
+        </div>
+        <div>
+          <img class="carousel-image" src="/assets/WWoHP-Lifestyle_600x400.png" title="Universal Orlando Tickets">
+          <div class="offer">SAVE UP TO $140</div>
+        </div>
+      </div>
+
+      <div class="callout secondary">
+        <div class="grid-x grid-padding-x">
+          <div class="large-3 medium-3 large-offset-1 cell text-center">
+            <h5>Recommend For Me:</h5>
+            <div class="stacked button-group">
+              <a class="button park-filter">THEME PARK TICKET</a>
+              <a class="button attraction-filter">CITY ATTRACTION TICKET</a>
+              <a class="button ski-filter">SKI TICKET</a>
+              <a class="clear-filter">Clear All ></a>
+            </div>
+          </div>
+
+          <div class="large-8 medium-8 cell">
+            <div class="grid-x grid-padding-x">
+              <div class="large-3 medium-3 small-3 cell">
+                <div class="primary-background callout ticket-card park-ticket">
+                  <p>Theme Park Ticket 1</p>
+                </div>
+              </div>
+              <div class="large-3 medium-3 small-3 cell">
+                <div class="primary-background callout ticket-card park-ticket">
+                  <p>Theme Park Ticket 2</p>
+                </div>
+              </div>
+              <div class="large-3 medium-3 small-3 cell">
+                <div class="dark-purple primary callout ticket-card attraction-ticket">
+                  <p>City Attraction Ticket 1</p>
+                </div>
+              </div>
+              <div class="large-3 medium-3 small-3 cell">
+                <div class="dark-purple primary callout ticket-card attraction-ticket">
+                  <p>City Attraction Ticket 2</p>
+                </div>
+              </div>
+              <div class="large-3 medium-3 small-3 cell">
+                <div class="dark-purple primary callout ticket-card attraction-ticket">
+                  <p>City Attraction Ticket 3</p>
+                </div>
+              </div>
+              <div class="large-3 medium-3 small-3 cell">
+                <div class="light-purple primary callout ticket-card ski-ticket">
+                  <p>Ski Ticket 1</p>
+                </div>
+              </div>
+              <div class="large-3 medium-3 small-3 cell">
+                <div class="light-purple primary callout ticket-card ski-ticket">
+                  <p>Ski Ticket 2</p>
+                </div>
+              </div>
+              <div class="large-3 medium-3 small-3 cell">
+                <div class="light-purple primary callout ticket-card ski-ticket">
+                  <p>Ski Ticket 3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <div class="footer-images">
+      <img class="footer-width" src="/assets/Disney_castle.svg" title="Disney Castles">
+      <img class="footer-width" src="/assets/Family_in_Car.svg" title="Family in Car">
+    </div>
+    <footer></footer>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/what-input/dist/what-input.js"></script>
+    <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+    <script src="node_modules/foundation-sites/dist/js/plugins/foundation.reveal.min.js"></script>
+    <script src="node_modules/foundation-sites/dist/js/plugins/foundation.abide.min.js"></script>
+    <script src="node_modules/foundation-sites/dist/js/plugins/foundation.responsiveMenu.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
