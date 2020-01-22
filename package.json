@@ -7,6 +7,7 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp sass",
+    "predeploy": "npx -p node@10 npm install",
     "deploy": "npx -p node@10 foundation watch"
   },
   "author": "ZURB <foundation@zurb.com>",
