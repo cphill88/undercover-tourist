@@ -25,26 +25,26 @@ $(document).ready(function(){
     });
 
     $('.park-filter').on("click", function() {
-      $('.park-ticket').hide();
-      $('.park-filter').css('opacity', '0.5');
+      $('.park-ticket').toggle();
+      $('.park-filter').toggleClass('semi-transparent');
     });
 
     $('.ski-filter').on("click", function() {
-      $('.ski-ticket').hide();
-      $('.ski-filter').css('opacity', '0.5');
+      $('.ski-ticket').toggle();
+      $('.ski-filter').toggleClass('semi-transparent');
     });
 
     $('.attraction-filter').on("click", function() {
-      $('.attraction-ticket').hide();
-      $('.attraction-filter').css('opacity', '0.5');
+      $('.attraction-ticket').toggle();
+      $('.attraction-filter').toggleClass('semi-transparent');
     });
 
     $('.clear-filter').on('click', function() {
       $('.park-ticket').hide();
       $('.ski-ticket').hide();
       $('.attraction-ticket').hide();
-      $('.park-filter').css('opacity', '0.5');
-      $('.ski-filter').css('opacity', '0.5');
-      $('.attraction-filter').css('opacity', '0.5');
+      $('.park-filter').addClass('semi-transparent');
+      $('.ski-filter').addClass('semi-transparent');
+      $('.attraction-filter').addClass('semi-transparent');
     })
 });
